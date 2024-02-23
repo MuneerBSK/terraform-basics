@@ -12,3 +12,10 @@ output "sample_output" {
 
 # A variable can be accessed without ${} as well, if it's not accompanied in any sentence. If you just want to use it, you can directly refer it as `var.VariableName`
 
+variable "integer" {
+    default = 100
+}
+
+output "number" {
+    value = var.number
+}
