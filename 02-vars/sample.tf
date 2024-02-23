@@ -32,3 +32,9 @@ variable "sample_list" {
         "Muneerbasha"
     ]
 }
+
+#from the above list block, data in that can be any type 
+
+outpu "sample_list_op" {
+    value = "Welcome to ${var.sample_list[0]} Training and duration of the training is ${var.sample_list[4]} hours"
+}
