@@ -16,8 +16,8 @@ variable "integer" {
     default = 1000
 }
 
-output "number" {
-    value = var.number
+output "integer" {
+    value = var.integer
 }
 
 # List variable 
