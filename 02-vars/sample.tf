@@ -29,6 +29,6 @@ variable "sample_list" {
         "Cloud Formation",
         120,
         true,
-        "ManuVerma"
+        "Muneerbasha"
     ]
 }
