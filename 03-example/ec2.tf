@@ -6,7 +6,7 @@ provider "aws" {
     
 resource "aws_instance" "web" {
     ami       = "ami-0ca993affa3ce34e9"
-    instance_type = "t3.micro"
+    instance_type = "t3.nano"
 
     tags = {
         Name = "Terraform-Instance-Server-Name"
