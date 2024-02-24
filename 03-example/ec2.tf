@@ -1,16 +1,14 @@
-# Block to create EC2
+# always start with declarringg provider information first
+
+provider "aws" {
+    region = "us-east-1"
+}
+    
 resource "aws_instance" "web" {
-  ami                       = "ami-02fd2e8a76f43c89e"
-  instance_type             = "t3.nano"
-  vpc_security_group_ids    = [aws_security_group.allow_ssh_sg.id]
+    ami       = ami-0ca993affa3ce34e9
+    instance_type = "t3.micro"
 
-  tags = {
-    Name        = "Terraform-Instance-Server-Name"
-  }
+    tags = {
+        Name = "Terraform-Instance"
+    }
 }
-
-# Block to print the attribute 
-output "private_dns_of_server" {
-    value       = aws_instance.web.private_dns
-}
-
