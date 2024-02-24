@@ -12,3 +12,8 @@ resource "aws_instance" "web" {
         Name = "Terraform-Instance"
     }
 }
+
+# Block to print the attribute 
+output "private_dns_of_server" {
+    value       = aws_instance.web.private_dns
+}
